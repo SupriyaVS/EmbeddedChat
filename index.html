@@ -36,25 +36,25 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://testorgcom5-dev-ed.my.salesforce.com',
-			'https://chatpagesupriya-developer-edition.na150.force.com/liveAgentSetupFlow',
+			'https://trimbleconstruction--trimdevp5.my.salesforce.com',
+			'https://trimdevp5-trimbleconstruction.cs191.force.com/mytrimble',
 			gslbBaseURL,
-			'00D4x0000065tSy',
-			'Chat_Group',
+			'00D7c000008w4Ei',
+			'MYT_Chat_Agents',
 			{
-				baseLiveAgentContentURL: 'https://c.la3-c1-ia4.salesforceliveagent.com/content',
-				deploymentId: '5724x000000Lqt6',
-				buttonId: '5734x000000Lr3H',
-				baseLiveAgentURL: 'https://d.la3-c1-ia4.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Group',
-				isOfflineSupportEnabled: true
+				baseLiveAgentContentURL: 'https://c.la3-c1cs-ia5.salesforceliveagent.com/content',
+				deploymentId: '5727c000000Car0',
+				buttonId: '5737c000000Caxr',
+				baseLiveAgentURL: 'https://d.la3-c1cs-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I7c0000004CHCEA2_176ec9fcb97',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://testorgcom5-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://trimbleconstruction--trimdevp5.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
